@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0906;
+  --bg-soft: #14100b;
+  --card: #1c1611;
+  --card-hover: #241c15;
+  --border: #332a1e;
+  --foreground: #f5f0e8;
+  --muted: #a89c8a;
+  --accent: #d4af37;
+  --accent-strong: #b8932c;
+  --ink: #1a1508;
+  --danger: #f87171;
+  --warning: #fbbf24;
+  --success: #34d399;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+.rb-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+}
+
+.rb-btn-primary {
+  background: var(--accent);
+  color: var(--ink);
+  font-weight: 600;
+  border-radius: 0.7rem;
+  transition: background 0.15s ease;
+}
+.rb-btn-primary:hover {
+  background: var(--accent-strong);
+}
+.rb-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rb-btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  border-radius: 0.7rem;
+}
+.rb-btn-secondary:hover {
+  border-color: var(--accent);
+}
+
+.rb-btn-danger {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  border-radius: 0.7rem;
+}
+.rb-btn-danger:hover {
+  background: var(--danger);
+  color: #1a0808;
+}
+
+.rb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.rb-input {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  color: var(--foreground);
+  padding: 0.6rem 0.8rem;
+}
+.rb-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.rb-input::placeholder {
+  color: var(--muted);
+}
