@@ -67,15 +67,15 @@ export interface CallProposal {
 
 export const NDA_TEXT = `MUTUAL NON-DISCLOSURE AGREEMENT
 
-This Mutual Non-Disclosure Agreement ("Agreement") is entered into between the Contributor and the Business Owner named on this referral, facilitated by Rainmaker Business Outsourcing Group ("RainmakerBOG").
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into between the Contributor and the Business Owner named on this referral, facilitated by Rainmakers555.
 
-1. Purpose. The parties wish to explore a potential outsourcing/business relationship introduced via RainmakerBOG and may disclose confidential business, financial, and operational information to one another for that purpose.
+1. Purpose. The parties wish to explore a potential outsourcing/business relationship introduced via Rainmakers555 and may disclose confidential business, financial, and operational information to one another for that purpose.
 
 2. Confidentiality. Each party agrees to hold the other's confidential information in strict confidence, to use it solely to evaluate the proposed opportunity, and not to disclose it to any third party without prior written consent.
 
 3. Term. This Agreement remains in effect for two (2) years from the date of the last signature below, and confidentiality obligations survive termination of any business relationship.
 
-4. No Circumvention. Neither party will attempt to bypass RainmakerBOG or the introducing Contributor to complete a transaction directly arising from this introduction without honoring any applicable commission arrangement.
+4. No Circumvention. Neither party will attempt to bypass Rainmakers555 or the introducing Contributor to complete a transaction directly arising from this introduction without honoring any applicable commission arrangement.
 
 5. Governing Law. This Agreement is governed by the laws of India.
 
