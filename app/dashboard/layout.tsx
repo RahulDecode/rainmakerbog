@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ContributorProvider, useContributor } from "@/lib/ContributorContext";
+import { LOGO_SRC } from "@/lib/logoData";
 import { supabase } from "@/lib/supabase";
 
 function DashboardNav() {
@@ -17,8 +18,9 @@ function DashboardNav() {
   return (
     <header className="border-b" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/dashboard" className="font-semibold" style={{ color: "var(--accent)" }}>
-          RainmakerBOG
+        <Link href="/dashboard" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO_SRC} alt="Rainmakers555" className="h-8 w-auto" />
         </Link>
         <div className="flex items-center gap-4 text-sm">
           {contributor && <span style={{ color: "var(--muted)" }}>{contributor.full_name}</span>}
