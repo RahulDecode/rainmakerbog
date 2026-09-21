@@ -1,17 +1,22 @@
 import Link from "next/link";
+import { LOGO_SRC } from "@/lib/logoData";
 
 export default function HomePage() {
   return (
     <main className="flex-1">
-      <section className="max-w-5xl mx-auto px-6 pt-16 pb-12 sm:pt-24 sm:pb-16">
-        <div className="rb-badge" style={{ background: "rgba(212,175,55,0.12)", color: "var(--accent)" }}>
-          Rainmaker Business Outsourcing Group
+      <header className="max-w-5xl mx-auto px-6 pt-8">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={LOGO_SRC} alt="Rainmakers555" className="h-10 w-auto" />
+      </header>
+      <section className="max-w-5xl mx-auto px-6 pt-10 pb-12 sm:pt-14 sm:pb-16">
+        <div className="rb-badge" style={{ background: "rgba(217,164,65,0.14)", color: "var(--accent)" }}>
+          Rainmakers555 — Outsourcing Referral Network
         </div>
         <h1 className="mt-5 text-4xl sm:text-5xl font-semibold leading-tight max-w-3xl">
           Turn your network into referral income.
         </h1>
         <p className="mt-5 text-lg max-w-2xl" style={{ color: "var(--muted)" }}>
-          RainmakerBOG connects retired professionals and students with global outsourcing
+          Rainmakers555 connects retired professionals and students with global outsourcing
           opportunities for Indian companies and exporters. Refer a lead, sign the NDA, get on a
           call — and earn a commission when it lands.
         </p>
