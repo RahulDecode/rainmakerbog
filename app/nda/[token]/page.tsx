@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, use as usePromise } from "react";
+import { LOGO_SRC } from "@/lib/logoData";
 import { NDA_TEXT } from "@/lib/types";
 
 interface Status {
@@ -78,9 +79,8 @@ export default function PublicNdaPage({ params }: { params: Promise<{ token: str
     <main className="flex-1 flex items-center justify-center px-6 py-16">
       <div className="rb-card max-w-lg w-full p-8 space-y-4">
         <div>
-          <p className="text-xs uppercase tracking-wide" style={{ color: "var(--accent)" }}>
-            RainmakerBOG
-          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={LOGO_SRC} alt="Rainmakers555" className="h-6 w-auto mb-2" />
           <h1 className="text-xl font-semibold mt-1">NDA for {status.businessName}</h1>
         </div>
 
@@ -97,7 +97,7 @@ export default function PublicNdaPage({ params }: { params: Promise<{ token: str
 
         {businessSigned ? (
           <p className="text-sm" style={{ color: "var(--muted)" }}>
-            Thanks — you&apos;ve signed this NDA. RainmakerBOG will be in touch to schedule a call
+            Thanks — you&apos;ve signed this NDA. Rainmakers555 will be in touch to schedule a call
             once both sides are ready.
           </p>
         ) : (
