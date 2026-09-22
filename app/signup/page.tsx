@@ -29,23 +29,17 @@ export default function SignupPage() {
     const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        data: {
+          full_name: fullName,
+          phone: phone || null,
+          contributor_type: contributorType,
+          background: background || null,
+        },
+      },
     });
     if (signUpError || !signUpData.user) {
       setError(signUpError?.message ?? "Could not create your account.");
-      setLoading(false);
-      return;
-    }
-
-    const { error: insertError } = await supabase.from("contributors").insert({
-      auth_user_id: signUpData.user.id,
-      full_name: fullName,
-      email,
-      phone: phone || null,
-      contributor_type: contributorType,
-      background: background || null,
-    });
-    if (insertError) {
-      setError(insertError.message);
       setLoading(false);
       return;
     }
